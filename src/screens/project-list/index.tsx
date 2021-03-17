@@ -7,8 +7,8 @@ const apiUrl = process.env.REACT_APP_API_URL
 
 export const ProjectListScreen = () => { 
   const [param, setParam] = useState({
-  name: '',
-  personId:''
+    name: '',
+    personId:''
   })
   const debouncedParam = useDebounce(param,2000)
   
@@ -23,7 +23,7 @@ export const ProjectListScreen = () => {
     })
   }, [debouncedParam])
   
-    useMount(() => {
+  useMount(() => {
     fetch(`${apiUrl}/users`).then(async response => {
       if (response.ok) {
         setUsers(await response.json())
