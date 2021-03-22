@@ -25,3 +25,25 @@ npm run json-server
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## 项目配置
+
+### json-server middware
+1. 编写middleware.js文件
+2. 注入到json-server中：
+   更改package.json:
+```shell
+"json-server": "json-server __json_server_mock__/db.json --watch --port 3001 --middlewares ./__json_server_mock__/middleware.js"
+```
+
+
+
+### 开发工具包
+
+安装：`npx imooc-jira-tool` [npm](https://preview.npmjs.com/package/jira-dev-tool)
+
+了解`service worker`
+
+if browser's console tip a error,execute the below directive:
+
+npx msw init public
