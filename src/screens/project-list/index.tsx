@@ -3,7 +3,6 @@ import { cleanObject, useDebounce, useMount } from 'utils';
 import { useHttp } from 'utils/http';
 import { List } from './list';
 import { SearchPanel } from './search-panel';
-const apiUrl = process.env.REACT_APP_API_URL;
 
 export const ProjectListScreen = () => {
     const [param, setParam] = useState({
