@@ -47,3 +47,16 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 if browser's console tip a error,execute the below directive:
 
 npx msw init public
+
+
+
+
+
+## 学习
+
+
+
+useContent全局状态管理的使用。
+
+
+
