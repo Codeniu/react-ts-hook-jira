@@ -1,3 +1,4 @@
+import styled from '@emotion/styled';
 import { useEffect, useState } from 'react';
 import { cleanObject, useDebounce, useMount } from 'utils';
 import { useHttp } from 'utils/http';
@@ -24,9 +25,14 @@ export const ProjectListScreen = () => {
     });
 
     return (
-        <div>
-            <SearchPanel users={users} param={param} setParam={setParam} />
-            <List users={users} list={list} />
-        </div>
-    );
-};
+        <Container>
+          <h1>项目列表</h1>
+          <SearchPanel users={users} param={param} setParam={setParam} />
+          <List users={users} list={list} />
+        </Container>
+      );
+    };
+    
+    const Container = styled.div`
+      padding: 3.2rem;
+    `;
