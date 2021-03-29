@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import * as auth from 'auth-provider';
 import { useAuth } from 'context/auth-context';
 import qs from 'qs';
