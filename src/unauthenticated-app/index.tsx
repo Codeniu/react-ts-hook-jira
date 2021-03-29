@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import styled from "@emotion/styled";
 import { Button, Card, Divider } from "antd";
 import left from "assets/left.svg";
