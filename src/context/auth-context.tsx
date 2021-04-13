@@ -42,7 +42,12 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         bootstrapUser().then(setUser);
     });
 
-    return <AuthContext.Provider children={children} value={{ user, login, register, logout }} />;
+    return (
+        <AuthContext.Provider
+            children={children}
+            value={{ user, login, register, logout }}
+        />
+    );
 };
 
 export const useAuth = () => {
