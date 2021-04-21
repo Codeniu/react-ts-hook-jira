@@ -5,6 +5,7 @@ import { Row } from 'components/lib';
 import { useAuth } from 'context/auth-context';
 import React from 'react';
 import { ProjectListScreen } from 'screens/project-list';
+import { useDocumentTitle } from 'utils';
 
 /**
  * grid 和 flex 各自的应用场景
@@ -20,10 +21,9 @@ import { ProjectListScreen } from 'screens/project-list';
 
 export const AuthenticatedApp = () => {
     const { logout, user } = useAuth();
-    const value: any = undefined;
+    useDocumentTitle('任务列表', false);
     return (
         <Container>
-            <div>{value.name}</div>
             <Header between={true}>
                 <HeaderLeft gap={true}>
                     <SoftwareLogo width={'18rem'} color={'rgb(38, 132, 255)'} />
