@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom';
 import { Navigate, Route, Routes } from 'react-router';
 import { KanbanScreen } from 'screens/kanban';
 import { EpicScreen } from 'screens/epic';
-
+import { useDocumentTitle } from 'utils/index';
 export const ProjectScreen = () => {
+  useDocumentTitle('项目详情');
   return (
     <div>
       <h1>ProjectScreen</h1>
